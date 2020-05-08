@@ -1,0 +1,10 @@
+/* Code tidied up by ScrapBook */
+@import url("css.css");
+#chatInsideBody *, #e3D18r_czater * { font-family: Lato,sans-serif !important; }
+@media (max-width: 769px) {
+}
+#e3D18r-modal-header, .czater-header { background-color: rgb(201, 179, 20) !important; }
+#teaser { background-color: rgb(201, 179, 20); right: 0px; }
+#teaser::after { border-color: transparent rgb(201, 179, 20); }
+.e3D18r-avatar { box-shadow: none !important; }
+#e3D18r_czater #teaser_caption, #e3D18r_czater .czater-headerMSG, #e3D18r_czater .czater-headerMSG > div { color: rgb(255, 255, 255) !important; }

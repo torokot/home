@@ -1,0 +1,114 @@
+/* Code tidied up by ScrapBook */
+@keyframes fadein {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@media (max-width: 400px) {
+  .html, body { height: 100%; }
+}
+#sendEmail *, .form-control, .formClientData * { box-sizing: border-box; }
+.form-control { display: block; background: rgb(255, 255, 255) none repeat scroll 0% 0%; width: 100%; height: auto; padding: 20px 12px 8px; font-size: 14px; color: rgb(85, 85, 85); line-height: 1.42857; border: 0px none; transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s; outline: medium none; }
+.client-data-all-fields > * { margin-top: 1px; }
+#chatInsideBody form .form-message { min-height: 95px; margin-top: 1px; }
+body, html { margin: 0px; padding: 0px; height: 100%; width: 100%; overflow: hidden; }
+body { border: medium none !important; font-size: 14px; }
+* { box-sizing: border-box; }
+a { text-decoration: none; }
+#marking { display: none; position: absolute; z-index: 99996; background-color: rgb(245, 245, 245); width: 100%; height: 100%; box-sizing: border-box; }
+#markDown, #markUp { vertical-align: middle; margin-bottom: 10px; cursor: pointer; opacity: 0.4; width: 40px; height: 40px; display: inline-block; }
+#markDown:hover, #markDown[data-selected="true"], #markUp:hover, #markUp[data-selected="true"] { opacity: 1 !important; }
+#markForm { text-align: right; position: absolute; width: 100%; padding: 20px 0px; }
+#markForm > div:first-child { text-align: center; }
+#markForm > div:last-child { padding: 0px 20px; }
+.czater-button { display: inline-block; border: 0px none; border-radius: 20px !important; color: rgb(255, 255, 255); padding: 7px 15px; margin-top: 10px; font-size: 14px; cursor: pointer; text-transform: uppercase; font-weight: 400; }
+.czater-window .czater-content { position: relative; height: 100% !important; width: 100%; padding-top: 0px !important; margin-top: 0px !important; overflow: hidden; background-color: rgb(245, 245, 245); box-sizing: border-box; }
+.loading { padding-top: 40%; text-align: center; }
+.loading img { width: 30px; }
+.send-control { position: fixed; bottom: 30px; width: calc(100% - 20px); right: 10px; z-index: 100; }
+.form-data { height: 100%; overflow-y: auto; }
+.form-data, .form-data input { box-sizing: border-box; }
+label.mark { opacity: 0.4; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; }
+input[name="markValue"]:checked + label, input[name="markValue"]:checked + label > img { opacity: 1 !important; }
+input[name="markValue"] { display: none; }
+#czater-mainContener { width: 100%; height: 100% !important; position: relative; top: 0px !important; display: none; }
+.czater-sections.form { width: 100% !important; }
+.czater-sections > div { padding-bottom: 40px; }
+.czater-sections { position: absolute; left: 0px; top: 0px; z-index: 99993; margin-bottom: -55px; padding: 10px 8% 0px !important; background: rgb(255, 255, 255) none repeat scroll 0% 0%; height: 100%; width: 100%; box-sizing: border-box; display: none; overflow-x: hidden; overflow-y: auto; }
+.czater-sections ul { padding: 0px; margin: 0px; }
+ul.sections-online { margin-top: 20px; }
+#chatInsideBody { display: block; min-width: 100%; width: 100%; background: rgb(245, 245, 245) none repeat scroll 0% 0%; }
+.czater-settings { text-align: right; left: 0px; top: 0px; z-index: 99994; margin-bottom: -55px; background: rgb(245, 245, 245) none repeat scroll 0% 0%; height: 341px; width: 100%; }
+#settings, .czater-settings { position: absolute; display: none; }
+#settings { bottom: 30px; left: -23px; box-sizing: border-box; background: rgb(255, 255, 255) none repeat scroll 0% 0%; z-index: 1; border-radius: 6px; box-shadow: -1px 1px 20px 1px rgba(0, 0, 0, 0.1); }
+.czater-settings-button { padding: 10px 15px 5px; z-index: 1; top: 3px !important; left: -7px; border-bottom: 1px solid rgb(238, 238, 238); transition: all 0.3s ease 0s; }
+.czater-myData-button { padding: 5px 15px 10px; z-index: 1; top: -14px !important; left: -7px; transition: all 0.3s ease 0s; }
+.czater-myData-button:hover, .czater-settings-button:hover { background: rgb(238, 238, 238) none repeat scroll 0% 0%; }
+#settings::before { border-color: transparent rgb(255, 255, 255); border-image: none; border-style: solid; border-width: 0px 15px 15px 0px; bottom: -15px; content: ""; display: block; right: 42px; position: absolute; width: 0px; transform: rotate(-3deg); }
+#chatInsideBody input.czater-myData-button-close { background-color: rgb(171, 171, 171); margin-right: 5px; float: right; margin-top: 15px; }
+.czater-submit img { position: absolute; right: 50px; top: -11px; width: 17px; }
+#chatInsideBody #markCancel { background-color: rgb(171, 171, 171); }
+.czater-myData-button:hover { background: rgb(178, 178, 178) none repeat scroll 0% 0%; text-decoration: none; }
+.form-czater-send { margin-bottom: 20px; }
+.form-czater-send > div { margin: 0px !important; }
+.form-czater-download { display: none; }
+.czater-clientdata { float: right; margin-top: 15px; }
+:-moz-placeholder, *::-moz-placeholder { color: rgb(187, 187, 187); font-weight: 300; font-size: 12px; opacity: 1; line-height: 22px; }
+.hidden { display: none !important; visibility: hidden !important; }
+#getData { float: left; margin-top: 5px; padding: 0px 10px; }
+#dataByFacebook { display: inline-block; float: left; color: rgb(255, 255, 255); border-radius: 18px; margin-top: 9px; cursor: pointer; width: 30px; height: 30px; }
+#dataByFacebook div { height: 30px; overflow: auto; }
+#dataByGoogle { display: inline-block; float: left; color: rgb(255, 255, 255); margin: 10px 0px 0px 5px; border-radius: 18px; overflow: hidden; cursor: pointer; width: 30px; }
+.czaterTopButtons { position: fixed; z-index: 999; width: calc(100% - 20px) !important; margin-top: 10px; margin-left: 10px; margin-right: 10px; }
+#welcomeMessage { display: none; float: left; clear: both; margin: 10px 0px 0px !important; }
+.czater-form-offline, .czater-myData { display: none; width: 100%; height: 100%; }
+.czater-messages { position: absolute; bottom: 0px; padding-bottom: 0px !important; overflow-y: auto; overflow-x: hidden; width: 100% !important; height: auto !important; max-height: 100%; background: rgb(245, 245, 245) none repeat scroll 0% 0%; box-sizing: border-box; font-weight: 700; }
+.czater-messages::after { content: " "; display: block; padding-bottom: 50px; clear: both; }
+.czater-incomingMessage { position: fixed !important; left: 10px; bottom: 58px !important; animation: 0s ease 0s normal none 1 running none !important; }
+.czater-window { width: 100% !important; height: calc(100% - 54px) !important; }
+.czater-submit { position: absolute; right: 0px; width: 78px; top: 28px !important; z-index: 99999; display: block !important; visibility: visible !important; }
+.small { font-size: 14px; margin-bottom: 10px; }
+.form { height: 100%; overflow-y: auto; }
+.czater-submit div { cursor: pointer; }
+.slimScrollDiv { width: 100%; }
+.slimScrollBar { z-index: 99999 !important; }
+.czater-leftMessage { background: rgb(171, 128, 170) none repeat scroll 0% 0%; border-radius: 20px; overflow-wrap: break-word; color: rgb(255, 255, 255); margin: 1em 1em 0.7em; padding: 10px 15px; position: relative; float: left; box-sizing: border-box; width: 70%; }
+.czater-leftMessage::before { -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-color: transparent rgb(171, 128, 170); border-image: none; border-style: solid; border-width: 20px 0px 0px 20px; content: ""; display: block; left: 4px; position: absolute; top: -4px; width: 0px; transform: rotate(-20deg); }
+.czater-incomingMessage { color: rgb(0, 0, 0); margin: 1em 1em 0px; padding: 5px 15px 7px 0px; position: relative; float: left; box-sizing: border-box; width: 70%; opacity: 0.7; }
+#czater-input-area { position: absolute !important; z-index: 999999; width: 100%; bottom: 0px; }
+#inputMessage { height: 100px; max-height: 53px; background: rgb(255, 255, 255) none repeat scroll 0% 0% !important; box-sizing: border-box; box-shadow: none; border-width: 1px 0px 0px; border-style: solid; border-color: rgb(232, 232, 232) rgb(178, 178, 178) rgb(178, 178, 178); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; border-radius: 0px !important; display: block; position: relative; bottom: 0px; margin: 0px auto; width: 100%; z-index: 9999; color: rgba(0, 0, 0, 0.8); padding: 14px 45px 20px 22px; transition: all 0.2s ease 0s; overflow: hidden; resize: none; }
+#inputMessage:focus { box-shadow: 0px -20px 40px rgba(0, 0, 0, 0.03); border: 0px none !important; }
+.inputView { box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) inset; }
+.inputView:focus { border: medium none rgba(82, 168, 236, 0.8); box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) inset, 0px 0px 8px rgba(82, 168, 236, 0.6); outline-style: none; outline-width: 0px; }
+.form-data h3 { text-align: left; margin: 0px 0px 12px; padding: 10px; font-weight: 400; }
+.czater-settings input[type="email"] { width: 100% !important; margin-top: 0px !important; }
+.czater-settings .czater-settings-button-close { background-color: rgb(171, 171, 171) !important; }
+#addImageToConversation { position: absolute; top: 17px; right: 21px; z-index: 9999; cursor: pointer; }
+input#imageToConversation { z-index: 99993; position: absolute; width: 17px; height: 17px; opacity: 0; cursor: pointer; }
+input#imageToConversation:hover + div.addImageIcon { opacity: 1; }
+div.addImageIcon { height: 17px; width: 17px; opacity: 0.3; }
+#pressSend { z-index: 99993; right: 21px; top: 14px; width: 26px; height: 26px; opacity: 0.3; cursor: pointer; }
+#pressSend, .addImageLoader { display: none; position: absolute; }
+.addImageLoader { z-index: 99992; right: 30px; top: -2px; }
+#paymentChatOff { display: none; position: absolute; bottom: 0px; z-index: 999999; text-align: center; width: 100%; background: rgb(36, 36, 36) none repeat scroll 0% 0%; height: 54px; color: rgb(255, 255, 255); line-height: 50px; }
+#message-offline-send { display: none; }
+#sendEmail::after { content: " "; display: table; width: 100%; height: 60px; }
+#sendEmail.form .small { position: relative; border-radius: 10px; padding: 10px !important; }
+#sendEmail textarea.form-control { min-height: 150px; }
+#sendEmail > div:last-child { margin-bottom: 40px; }
+.client-data-input-field { position: relative; }
+.client-data-input-field .client-data-placeholder { position: absolute; padding: 2px; left: 10px; transition: all 0.2s ease 0s; pointer-events: none; opacity: 0.5; }
+.client-data-input-field .client-data-input[data-input-value] + .client-data-placeholder, .client-data-input-field .client-data-input[data-input-value]:focus + .client-data-placeholder { font-size: 12px; top: 2px; opacity: 0.5; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; }
+.client-data-input-field .client-data-input[data-input-value=""] + .client-data-placeholder { font-size: 14px; top: 14px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; opacity: 0.8; }
+.e3D18r-icon-bundle { background-size: 100% auto; }
+.czater-submit .logo { position: absolute; top: -54px; }
+#sendEmail .logo, .czater-submit .logo { text-decoration: none; color: rgb(178, 178, 178); right: 22px; }
+#sendEmail .logo { position: fixed; bottom: 8px; }
+.logo .e3D18r-icon-promo:hover { opacity: 1; }
+#chatInsideBody .logo { display: block !important; }
+.logo .e3D18r-icon-promo { width: 100px; height: 16px; background-size: contain; background-repeat: no-repeat; background-position: 100% center; opacity: 0.3; transition: all 0.5s ease 0s; }
+#allSettings { cursor: pointer; }
+#allSettings { transition: all 1s cubic-bezier(0.42, 0, 0.07, 0.56) 0s; }
+#allSettings:hover { transform: rotate(1turn); }
+#markSend { float: right; margin-left: 10px; }
+textarea { background: rgb(255, 255, 255) none repeat scroll 0% 0% !important; }
+#czater-photos { position: relative; bottom: -11px; padding-left: 15px; z-index: 9999999; display: none; }

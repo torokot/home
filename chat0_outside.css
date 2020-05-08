@@ -1,0 +1,108 @@
+/* Code tidied up by ScrapBook */
+@media (max-height: 450px) and (orientation: portrait) {
+  #cc-button-iframe, #czater-contener[data-display="off"] { display: none !important; }
+}
+@media (max-width: 769px) {
+}
+@media (max-width: 769px) {
+}
+@media (min-width: 770px) {
+}
+@media (max-width: 769px) {
+  #e3D18r_czater .czater-welcome-message { min-width: 220px; padding: 8px 20px; }
+  #e3D18r_czater .attachment-mobile-bottom-right .czater-welcome-message { left: auto; right: 0px; bottom: 45px; }
+}
+@media (min-width: 770px) {
+}
+@media (max-width: 769px) {
+}
+#chatHeader .czater-unread-badge { position: absolute; right: -10px; top: -10px; display: flex; justify-content: center; align-items: center; background-color: red; height: 25px; width: 25px; border-radius: 100%; color: rgb(255, 255, 255); }
+@keyframes fadein {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes moveIn {
+0% { opacity: 1; bottom: -120%; }
+70% { opacity: 1; bottom: -10%; }
+100% { opacity: 1; }
+}
+@keyframes moveOut {
+0% { opacity: 1; }
+100% { opacity: 1; bottom: -120%; }
+}
+#e3D18r_czater .e3D18r-icon-bundle { background-size: 100% auto; background-position: 50% center; }
+#e3D18r_czater .fadein { animation: 0.4s ease 0s normal none 1 running fadein; }
+#e3D18r_czater .hidden { opacity: 0; }
+@keyframes fadeout {
+0% { opacity: 1; }
+100% { opacity: 0; }
+}
+#e3D18r_czater #czater-contener[data-anim="on"] { opacity: 1; animation-delay: 0s; animation-name: moveIn; animation-duration: 0.6s; animation-timing-function: ease-out; animation-fill-mode: none; }
+#e3D18r_czater * { line-height: 1.4; box-sizing: border-box; }
+#e3D18r_czater #czater-contener { max-height: 100%; display: none; position: fixed; bottom: 0px; right: 40px; height: 490px; width: 320px; z-index: 2147483647; box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.1); border-top-left-radius: 5px; border-top-right-radius: 5px; }
+#e3D18r_czater .czater-header { line-height: 1.42857; border-top-left-radius: 5px; border-top-right-radius: 5px; box-sizing: border-box; font-size: 14px; background: rgb(87, 0, 84) none repeat scroll 0% 0%; height: 30px; position: relative; z-index: 2147483647; bottom: 0px; color: rgb(255, 255, 255); }
+#e3D18r_czater .czater-button.czater-header { margin-top: 0px; border-top: 10px none; border-radius: 5px 5px 0px 0px; }
+#e3D18r_czater .czater-headerMSG { position: absolute; top: 20px; left: 60px; font-size: 14px; }
+#e3D18r_czater .czater-button .czater-status-offline, #e3D18r_czater .czater-button .czater-status-online { display: block !important; width: 20px; }
+#e3D18r_czater #czater-contener[data-display="off"] .czater-header { cursor: pointer; }
+#e3D18r_czater #teaser { display: none; position: absolute; bottom: 45px; z-index: 99996; width: auto; min-width: 190px; padding: 9px 14px; border-radius: 5px; box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2); cursor: pointer; }
+#e3D18r_czater #teaser::after { display: block; position: absolute; left: 20px; bottom: -11px; width: 0px; border-image: none; border-style: solid; border-width: 0px 11px 11px 0px; content: ""; }
+#e3D18r_czater #teaser_caption { font-size: 18px; font-weight: 700; padding: 3px; text-align: left; }
+#e3D18r_czater #teaser_close { display: none; position: absolute; right: 7px; top: 7px; z-index: 99999; width: 12px; height: 12px; cursor: pointer; }
+#e3D18r_czater #czater-contener:hover #teaser_close { display: block !important; }
+#e3D18r_czater .czater-button .czater-headerMSG { top: 6px; left: 40px; padding-left: 7px; font-size: 14px; }
+#e3D18r_czater .czater-button .czater-status { background-color: transparent !important; left: 4px; border-radius: 0px; }
+#e3D18r_czater #minimize { box-sizing: content-box; width: 10px; height: 10px; position: absolute; top: 15px; left: auto; right: 73px; z-index: 9999; opacity: 0.5; cursor: pointer; padding: 2px; }
+#e3D18r_czater #minimize:hover { opacity: 1; }
+#e3D18r_czater #czater-contener[data-display="off"] #minimize { display: none; }
+#e3D18r_czater .czater-status { display: none; width: 20px; height: 20px; margin: 5px; position: absolute; left: 260px; float: right; border-radius: 5px; }
+#e3D18r_czater .czater-status:hover { opacity: 1; }
+#e3D18r_czater #windowed { box-sizing: content-box; width: 10px; height: 10px; position: absolute; top: 15px; left: auto; right: 45px; z-index: 9999; opacity: 0.5; cursor: pointer; padding: 2px; }
+#e3D18r_czater #windowed:hover { opacity: 1; }
+#e3D18r_czater #czater-contener[data-display="off"] #windowed { display: none; }
+#e3D18r_czater #closeConversationMenu, #openConversationMenu { display: none; position: absolute; right: 5px; top: 40px; z-index: 99999; padding: 5px; border-radius: 5px; background-color: rgb(255, 255, 255); color: rgba(0, 0, 0, 0.8); opacity: 0.7; cursor: pointer; text-decoration: none; }
+#e3D18r_czater #openConversationMenu { opacity: 1; left: 5px; right: inherit; }
+#e3D18r_czater #closeConversationMenu:hover { opacity: 1; color: rgb(87, 0, 84); text-decoration: none; }
+#e3D18r_czater #closeConversation { box-sizing: content-box; width: 10px; height: 10px; position: absolute; right: 17px; top: 15px; z-index: 9999; opacity: 0.5; cursor: pointer; padding: 2px; }
+#e3D18r_czater #closeConversation:hover { opacity: 1; }
+#e3D18r_czater #czater-contener[data-display="off"] #closeConversation, #e3D18r_czater .czater-disable { display: none; }
+#e3D18r_czater #czater-iframe { border: 0px none; overflow: hidden; box-sizing: border-box; height: calc(100% - 120px); width: 100%; position: static; margin-top: 0px; padding-top: 0px; }
+#e3D18r_czater #czater-contener[data-display="off"] #czater-iframe { margin-top: 0px !important; }
+#e3D18r_czater .headerContener { height: 100%; display: table; }
+#e3D18r_czater .headerContener #czaterReturn { display: none; height: 90px; background-color: transparent; border: medium none; margin-top: 30px; padding: 1px 6px; outline: medium none; cursor: pointer; }
+#e3D18r_czater .headerContener #czaterReturn div { opacity: 0.7; width: 10px; height: 20px; }
+#e3D18r_czater #czater-contener[data-display="off"] #e3D18r-avatar, #e3D18r_czater #czater-contener[data-display="off"] .headerContener #czaterReturn { display: none !important; }
+#e3D18r_czater #czater-contener[data-display="off"] #headerMSG { left: 28px !important; }
+#e3D18r_czater .avatarInside .e3D18r-avatar { width: 60px !important; height: 60px !important; top: 18px !important; left: 16px !important; }
+#e3D18r_czater div.e3D18r-avatar:empty { display: none !important; }
+#e3D18r_czater .header-align { top: 20px; }
+@media (max-width: 769px) {
+  #e3D18r_czater #teaser { display: none !important; }
+  #e3D18r_czater #czater-contener[data-display="off"] .czater-button.czater-header { border-radius: 5px; }
+  #e3D18r_czater #closeConversation, #e3D18r_czater #minimize, #e3D18r_czater #windowed { width: 16px; height: 16px; }
+  #e3D18r_czater #status.czater-status { top: 2px; left: 7px; }
+  #e3D18r_czater #czater-contener[data-display="off"] .headerContener #headerMSG { left: 32px !important; }
+}
+@media (min-width: 330px) and (max-width: 769px) {
+}
+@media (min-width: 770px) {
+}
+@media (max-height: 350px) {
+}
+.czater-welcome-message { font-size: 14px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); right: 0px; position: absolute; bottom: 45px; z-index: 99996; width: auto; min-width: 300px; padding: 20px 25px; border-radius: 5px; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); cursor: pointer; font-weight: 400 !important; transition: all 1s ease-in-out 0s; }
+#welcome_close { display: block; width: 10px; height: 10px; position: absolute; right: 6px; top: -19px; }
+#welcome_name { font-weight: lighter; margin-bottom: 5px; }
+@media (max-width: 769px) {
+  #e3D18r_czater #welcome_name { margin-bottom: 2px; }
+}
+@media not all {
+  #e3D18r_czater #teaser_close { display: block; top: 6px; right: 4px; }
+}
+@media (min-width: 770px) {
+}
+@media (min-width: 770px) {
+  #czater-contener.attachment-bottom-right[data-display="off"] { right: 40px; left: auto; }
+}
+@media (max-width: 769px) {
+  #e3D18r_czater #czater-contener.attachment-mobile-bottom-right[data-display="off"] { left: auto !important; right: 15px !important; bottom: 8px; }
+}
